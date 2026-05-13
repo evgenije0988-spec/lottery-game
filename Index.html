@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лотерея 6 из 36</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Лотерея 6 из 36</h1>
+
+      <!-- Блок выбора чисел (сверху) -->
+      <div id="numberSelection">
+        <h3>Выберите 6 чисел (от 1 до 36):</h3>
+        <div id="numberGrid" class="number-grid"></div>
+        <button id="confirmSelection">Подтвердить выбор</button>
+      </div>
+
+      <!-- Управление игрой (в центре) -->
+      <div class="setup">
+        <label>Количество участников (1–4):</label>
+        <select id="participantsCount">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4" selected>4</option>
+        </select>
+
+        <button id="startGameBtn">Начать игру</button>
+        <button id="resetBtn">Начать заново</button>
+      </div>
+
+      <!-- Игровое поле -->
+      <div id="playersContainer" class="players-container" style="display: none;"></div>
+      <button id="startLotteryBtn" style="display: none;">Запустить лотерею</button>
+
+      <!-- Выпадение шаров (ниже игровых кнопок) -->
+      <div id="ballsContainer" class="balls-container" style="display: none;"></div>
+
+      <!-- Результаты (в самом низу) -->
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
